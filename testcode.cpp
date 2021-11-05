@@ -23,7 +23,8 @@ OutputNumberOfAcres=ImputAreaFeet/unit;
 round(OutputNumberOfAcres);
 
 //output
-cout << "Number of Acres is about: " << OutputNumberOfAcres << " units.";
+cout << " The number of acres is about: " << OutputNumberOfAcres << " of area. ";
 
 return 0;
+
 }
