@@ -2,16 +2,20 @@
 #include <cmath>
 using namespace std;
 
-int main(){
+int main()
+{
+
 //variables 
-int unit = 43560;
+const int unit = 43560;
 float ImputAreaFeet;
 float OutputNumberOfAcres;
 
+string welcomeTexts[3] = {"WELCOME TO UNIT CONVERTER FEET TO ACRES", "PLEASE ESTIMATE TO THE NEAREST WHOLE NUMBER", "ENTER SIZE OF AREA IN FEET:"};
+
 //text for user
-cout << " WELCOME TO UNIT CONVERTER FEET TO ACRES " << endl;
-cout << " PLEASE ESTIMATE TO THE NEAREST WHOLE NUMBER " << endl;
-cout << " ENTER SIZE OF AREA IN FEET: ";
+for(int j=0;j<3;j++){
+    cout  << welcomeTexts[j] << "\n";
+}
 
 //defines our number of sq ft units to calculate 
 cin >> ImputAreaFeet;
@@ -23,7 +27,7 @@ OutputNumberOfAcres=ImputAreaFeet/unit;
 round(OutputNumberOfAcres);
 
 //output
-cout << " The number of acres is about: " << OutputNumberOfAcres << " of area. ";
+cout << "The area of acres is about: " << OutputNumberOfAcres << " unit(s) . ";
 
 return 0;
 
